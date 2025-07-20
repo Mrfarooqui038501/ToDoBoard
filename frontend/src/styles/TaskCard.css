@@ -1,0 +1,59 @@
+.task-card {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.task-card.dragging {
+  opacity: 0.5;
+  transform: scale(1.05);
+}
+
+.task-card h4 {
+  margin: 0 0 10px;
+}
+
+.task-card p {
+  margin: 5px 0;
+}
+
+.task-card input,
+.task-card textarea,
+.task-card select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-card textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.task-card button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-card button:nth-child(1) {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.task-card button:nth-child(2) {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.task-card button:nth-child(3) {
+  background-color: #ffc107;
+  color: #000;
+}

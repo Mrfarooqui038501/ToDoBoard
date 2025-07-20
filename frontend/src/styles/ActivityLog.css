@@ -1,0 +1,42 @@
+.activity-log {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.activity-log h3 {
+  margin: 0 0 15px;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+.activity-log ul {
+  list-style: none;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.activity-log li {
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1rem;
+  color: #34495e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-log li:last-child {
+  border-bottom: none;
+}
+
+.activity-log li strong {
+  color: #007bff;
+  font-weight: 600;
+}

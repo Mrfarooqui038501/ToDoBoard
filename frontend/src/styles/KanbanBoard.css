@@ -1,0 +1,117 @@
+.kanban-board {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.kanban-board h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.task-form button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #218838;
+}
+
+.columns {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 250px;
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 8px;
+  min-height: 300px;
+}
+
+.column h3 {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.column.highlight {
+  background-color: #d4edda;
+}
+
+.conflict-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.conflict-modal h3 {
+  margin-top: 0;
+}
+
+.conflict-modal .version {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.conflict-modal button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.conflict-modal button:first-child {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.conflict-modal button:last-child {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .columns {
+    flex-direction: column;
+  }
+
+  .column {
+    min-width: 100%;
+  }
+}
